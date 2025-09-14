@@ -141,7 +141,7 @@ const About = () => {
               <motion.div
                 key={feature.title}
                 variants={itemVariants}
-                className="p-6 bg-card rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-border"
+                className="p-6 bg-card rounded-lg shadow-lg hover:shadow-xl transition-shadow border"
                 whileHover={{ y: -5, scale: 1.02 }}
                 transition={{ duration: 0.3 }}
               >

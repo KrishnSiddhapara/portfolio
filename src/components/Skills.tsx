@@ -91,7 +91,7 @@ const Skills = () => {
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         transition={{ delay: index * 0.05 }}
-        className="p-6 bg-card rounded-lg shadow-lg border border-border hover:shadow-xl transition-all duration-300"
+        className="p-6 bg-card rounded-lg shadow-lg border  hover:shadow-xl transition-all duration-300"
         whileHover={{ y: -5, scale: 1.02 }}
       >
         <div className="flex items-center justify-between mb-4">
@@ -148,7 +148,7 @@ const Skills = () => {
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                 activeCategory === category.id
                   ? "bg-primary text-primary-foreground shadow-lg"
-                  : "bg-card text-foreground hover:bg-primary/10 border border-border"
+                  : "bg-card text-foreground hover:bg-primary/10 border "
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -206,7 +206,7 @@ const Skills = () => {
           variants={itemVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="mt-16 p-8 bg-card rounded-lg shadow-lg border border-border"
+          className="mt-16 p-8 bg-card rounded-lg shadow-lg border "
         >
           <h3 className="text-xl font-heading font-semibold text-foreground mb-4 text-center">Skills Summary</h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">

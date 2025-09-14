@@ -59,7 +59,7 @@ const Projects = () => {
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         transition={{ delay: index * 0.1 }}
-        className="group relative bg-card rounded-lg shadow-lg border border-border overflow-hidden hover:shadow-xl transition-all duration-300"
+        className="group relative bg-card rounded-lg shadow-lg border  overflow-hidden hover:shadow-xl transition-all duration-300"
         whileHover={{ y: -10, scale: 1.02 }}
         onClick={() => setSelectedProject(project)}
       >
@@ -184,7 +184,7 @@ const Projects = () => {
           onClick={(e) => e.stopPropagation()}
         >
           {/* Modal Header */}
-          <div className="sticky top-0 bg-card border-b border-border p-6 flex items-center justify-between">
+          <div className="sticky top-0 bg-card border-b  p-6 flex items-center justify-between">
             <h2 className="text-2xl font-heading font-bold text-foreground">{project.title}</h2>
             <motion.button
               onClick={() => setSelectedProject(null)}
@@ -268,7 +268,7 @@ const Projects = () => {
             )}
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-border">
+            <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t ">
               <motion.a
                 href={project.githubUrl}
                 target="_blank"

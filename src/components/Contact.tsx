@@ -147,7 +147,7 @@ const Contact = () => {
                 <motion.a
                   key={info.label}
                   href={info.href}
-                  className="flex items-center space-x-4 p-4 bg-card rounded-lg shadow-lg border border-border hover:shadow-xl transition-all duration-300 group"
+                  className="flex items-center space-x-4 p-4 bg-card rounded-lg shadow-lg border  hover:shadow-xl transition-all duration-300 group"
                   whileHover={{ x: 5, scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   initial={{ opacity: 0, x: -20 }}
@@ -177,7 +177,7 @@ const Contact = () => {
                   href={personalInfo.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-card rounded-full shadow-lg border border-border hover:bg-primary hover:text-primary-foreground transition-colors"
+                  className="p-3 bg-card rounded-full shadow-lg border  hover:bg-primary hover:text-primary-foreground transition-colors"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.9 }}
                   aria-label="GitHub Profile"
@@ -188,7 +188,7 @@ const Contact = () => {
                   href={personalInfo.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-card rounded-full shadow-lg border border-border hover:bg-primary hover:text-primary-foreground transition-colors"
+                  className="p-3 bg-card rounded-full shadow-lg border  hover:bg-primary hover:text-primary-foreground transition-colors"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.9 }}
                   aria-label="LinkedIn Profile"
@@ -204,7 +204,7 @@ const Contact = () => {
             variants={containerVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            className="bg-card rounded-lg shadow-lg border border-border p-8"
+            className="bg-card rounded-lg shadow-lg border  p-8"
           >
             {!isSubmitted ? (
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -217,7 +217,7 @@ const Contact = () => {
                     type="text"
                     id="name"
                     className={`w-full px-4 py-3 bg-background border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 ${
-                      errors.name ? "border-destructive" : "border-border"
+                      errors.name ? "border-destructive" : ""
                     }`}
                     placeholder="Your full name"
                     whileFocus={{ scale: 1.02 }}
@@ -242,7 +242,7 @@ const Contact = () => {
                     type="email"
                     id="email"
                     className={`w-full px-4 py-3 bg-background border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 ${
-                      errors.email ? "border-destructive" : "border-border"
+                      errors.email ? "border-destructive" : ""
                     }`}
                     placeholder="your.email@example.com"
                     whileFocus={{ scale: 1.02 }}
@@ -267,7 +267,7 @@ const Contact = () => {
                     type="text"
                     id="subject"
                     className={`w-full px-4 py-3 bg-background border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 ${
-                      errors.subject ? "border-destructive" : "border-border"
+                      errors.subject ? "border-destructive" : ""
                     }`}
                     placeholder="What's this about?"
                     whileFocus={{ scale: 1.02 }}
@@ -292,7 +292,7 @@ const Contact = () => {
                     id="message"
                     rows={5}
                     className={`w-full px-4 py-3 bg-background border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 resize-none ${
-                      errors.message ? "border-destructive" : "border-border"
+                      errors.message ? "border-destructive" : ""
                     }`}
                     placeholder="Tell me about your project or just say hello!"
                     whileFocus={{ scale: 1.02 }}

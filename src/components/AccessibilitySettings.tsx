@@ -71,7 +71,7 @@ const AccessibilitySettings = ({ onReduceMotion, onFontSizeChange, onContrastCha
             onClick={() => setIsOpen(false)}
           >
             <motion.div
-              className="bg-card rounded-lg shadow-2xl max-w-md w-full p-6 border border-border"
+              className="bg-card rounded-lg shadow-2xl max-w-md w-full p-6 border "
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
@@ -168,7 +168,7 @@ const AccessibilitySettings = ({ onReduceMotion, onFontSizeChange, onContrastCha
               </div>
 
               {/* Reset Button */}
-              <div className="mt-8 pt-6 border-t border-border">
+              <div className="mt-8 pt-6 border-t ">
                 <button
                   onClick={() => {
                     setFontSize(100)

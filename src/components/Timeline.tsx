@@ -65,7 +65,7 @@ const Timeline = () => {
           whileHover={{ scale: 1.02, y: -5 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="bg-card rounded-lg shadow-lg border border-border p-6 hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-card rounded-lg shadow-lg border  p-6 hover:shadow-xl transition-shadow duration-300">
             {/* Header */}
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center space-x-3">
@@ -200,19 +200,19 @@ const Timeline = () => {
           animate={inView ? "visible" : "hidden"}
           className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8"
         >
-          <div className="text-center p-6 bg-card rounded-lg shadow-lg border border-border">
+          <div className="text-center p-6 bg-card rounded-lg shadow-lg border ">
             <div className="text-3xl font-bold text-primary mb-2">
               {timelineData.filter((item) => item.type === "education").length}
             </div>
             <div className="text-muted-foreground">Educational Milestones</div>
           </div>
-          <div className="text-center p-6 bg-card rounded-lg shadow-lg border border-border">
+          <div className="text-center p-6 bg-card rounded-lg shadow-lg border ">
             <div className="text-3xl font-bold text-primary mb-2">
               {timelineData.filter((item) => item.type === "experience").length}
             </div>
             <div className="text-muted-foreground">Professional Experiences</div>
           </div>
-          <div className="text-center p-6 bg-card rounded-lg shadow-lg border border-border">
+          <div className="text-center p-6 bg-card rounded-lg shadow-lg border ">
             <div className="text-3xl font-bold text-primary mb-2">2025</div>
             <div className="text-muted-foreground">Current Year</div>
           </div>
