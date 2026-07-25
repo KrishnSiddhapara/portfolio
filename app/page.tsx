@@ -38,7 +38,7 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home")
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(true)
   const [currentRole, setCurrentRole] = useState(0)
 
   const roles = ["Software Developer", "MERN Stack Developer", "Backend Developer", "AI Enthusiast"]
