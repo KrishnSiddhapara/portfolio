@@ -107,7 +107,7 @@ export default function Portfolio() {
         "Interactive skills, projects & timeline sections",
       ],
       image: "/p2.png",
-      link: "https://krishn.vercel.app/", // Add your deployed portfolio link!
+      link: "https://krishn-siddhapara.vercel.app/", // Add your deployed portfolio link!
       github: "https://github.com/KrishnSiddhapara/portfolio", // Add your portfolio repo link!
     },
   ]
